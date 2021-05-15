@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.74be4b8a.chunk.css",
+    "main.js": "/static/js/main.09e6e2ab.chunk.js",
+    "main.js.map": "/static/js/main.09e6e2ab.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c3389dfa.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c3389dfa.js.map",
+    "static/css/2.304bb152.chunk.css": "/static/css/2.304bb152.chunk.css",
+    "static/js/2.921d9229.chunk.js": "/static/js/2.921d9229.chunk.js",
+    "static/js/2.921d9229.chunk.js.map": "/static/js/2.921d9229.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.304bb152.chunk.css.map": "/static/css/2.304bb152.chunk.css.map",
+    "static/css/main.74be4b8a.chunk.css.map": "/static/css/main.74be4b8a.chunk.css.map",
+    "static/js/2.921d9229.chunk.js.LICENSE.txt": "/static/js/2.921d9229.chunk.js.LICENSE.txt",
+    "static/media/alba.21566052.png": "/static/media/alba.21566052.png",
+    "static/media/asem_reges.5cbf7823.jpg": "/static/media/asem_reges.5cbf7823.jpg",
+    "static/media/baca_seru.8073fa49.png": "/static/media/baca_seru.8073fa49.png",
+    "static/media/balanja.ac611a8b.jpg": "/static/media/balanja.ac611a8b.jpg",
+    "static/media/index.css": "/static/media/bg.54815803.png",
+    "static/media/coffee_shop.8ad4e1c6.jpg": "/static/media/coffee_shop.8ad4e1c6.jpg",
+    "static/media/cv.ab32f7ed.pdf": "/static/media/cv.ab32f7ed.pdf",
+    "static/media/displayImage.10306d44.jpg": "/static/media/displayImage.10306d44.jpg",
+    "static/media/smart_farm.881fb532.png": "/static/media/smart_farm.881fb532.png",
+    "static/media/struk.f58511b5.png": "/static/media/struk.f58511b5.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c3389dfa.js",
+    "static/css/2.304bb152.chunk.css",
+    "static/js/2.921d9229.chunk.js",
+    "static/css/main.74be4b8a.chunk.css",
+    "static/js/main.09e6e2ab.chunk.js"
+  ]
+}
