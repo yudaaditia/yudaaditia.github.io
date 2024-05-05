@@ -1,0 +1,747 @@
+:root{
+    --color1:white;
+    --color2:#9e579d;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* utility */
+.tombol {
+    border-radius: 40px;
+    font-family: viga;
+    color: white !important;
+}
+
+.viga {
+    font-family: viga !important;
+}
+
+/* font helvetica */
+.helvet {
+    font-family: helvetica;
+}
+
+/* Navbar */
+.navbar {
+    z-index: 99;
+    font-family: viga;
+    position: relative;
+
+}
+.navbar .navbar-brand {
+    font-size: 28px;
+    color: white;
+}
+.navbar .navbar-logo  {
+    
+}
+.navbar .navbar-logo img {
+    margin-left: 50px;
+    
+    width: 400px;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+/* Jumbotron */
+.jumbotron {
+    background: url(../img/jumbotron2.jpg);
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+    position: relative;
+    margin-top: -160px;
+}
+.jumbotron .display-4 {
+    color: white;
+    margin-top: 150px;
+    font-weight: 200;
+    font-size: 23px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+
+}
+.jumbotron .display-4 span {
+    font-weight: bold;
+}
+.jumbotron .container {
+    position: relative;
+    z-index: 1;
+}
+.jumbotron p {
+    color: white;
+    font-size: 14px;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(100,100,100,.7), rgba(100,100,100,.7));
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* Info Panel */
+.info-panel {
+    background-color: white;
+    box-shadow: 0 3px 20px rgba(0,0,0, 0.5);
+    border-radius: 20px;
+    padding: 20px 40px;
+    margin-top: -120px;
+}
+
+.info-panel img {
+    margin-top: 20px;
+}
+.info-panel img {
+    width: 65px;
+    height: 65px;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+.info-panel h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.info-panel p {
+    font-size: 13px;
+    color: #ACACAC;
+    margin-top: -5px;
+}
+
+/* Layanan */
+/*  Gallery  */
+
+section.gallery{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-around;
+    padding: 0 4px;
+    position: relative;
+
+}
+section.gallery .thumbnail {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 4px;
+    position: relative;
+    display: flex;
+    color: white;
+    transition: 0.5s ease;
+    background-size: cover;
+    text-align: center;
+}
+section.gallery .thumbnail img{
+    width: 100%;
+    z-index: -1;
+    margin: 0;
+    height: 100%;
+
+}
+section.gallery .thumbnail .hover {
+    text-align: center;
+    display: none;
+    margin: auto;
+    padding: 20px;
+    transition: 4s ease;
+    cursor: pointer;
+    position: absolute;
+    background-color: #242433;
+
+    opacity: 0;
+    height: 0%;
+    width: 0%;
+}
+.thumbnail .hover h3{
+    margin-top: 40px;
+    margin-bottom: 25px;
+    font-weight: 800;
+}
+section.gallery .thumbnail:hover .hover {
+    display: block;
+    opacity: 0.9;
+    color: white;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+.thumbnail .hover p{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.thumbnail .hover a{
+    border: 2px solid white;
+    padding: 8px;
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: .5s ease;
+}
+.thumbnail .hover a:hover{
+    color: #242433;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.thumbnail .judul {
+    background-image: linear-gradient(to top, rgba(88,89,91,.6), rgba(88,89,91,.6));
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thumbnail:hover .judul {
+    display: none;
+}
+
+/* Bengkel */
+#bengkel {
+    width: 800px;
+    height: 520px;
+    margin-bottom: 20px;
+}
+.d-block {
+    width: 100%;
+    height: 520px;
+    background-size: cover;
+}
+.slide {
+    margin-top: 50px;
+    padding-bottom: 0;
+    box-shadow: 0 3px 20px rgba(0,0,0, 5);
+}
+.carousel-item {
+    transition: transform 2s ease, opacity .5s ease-out
+}
+
+/* Cara Kerja */
+.cara-kerja {
+    /*background: url(img/cara-kerja.gif);
+    background-size: cover;*/
+    background-color: rgba(0,166,211,1);
+    padding: 40px 0;
+    color: white;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+    align-items: center;
+}
+.cara-kerja .kerja {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+.cara-kerja .kerja .card-kerja {
+    flex: 33%;
+}
+.cara-kerja h1 {
+    margin-top: 20px;
+    font-size: 50px;
+    text-align: center;
+    font-family: viga;
+}
+
+.cara-kerja img {
+    width: 100px;
+    height: 100px;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+.cara-kerja h3 {
+    font-size: 30px;
+    margin-top: 5px;
+}
+.cara-kerja p {
+    font-size: 17px;
+    margin-top: -5px;
+}
+
+/* Contact */
+.contact {
+    padding: 0 20px 40px;
+    width: 100%;
+}
+.contact a {
+    color: blue;
+}
+.contact h1 {
+    margin-top: 20px;
+    font-size: 50px;
+    text-align: center;
+    font-family: viga;
+}
+
+/* map */
+.map-container-5{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container-5 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+
+/* info detail */
+.info-detail {
+    /*background: url(img/footer.png);*/
+    background-color: rgba(0,166,211,1);
+    color: white;
+    width: 100%;/*
+    padding-top: 70px;*/
+    padding: 30px 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.info-detail .info-card1 {
+    padding-top: 10px;
+    flex: 25%;
+}
+.info-detail .info-card {
+    flex: 30%;
+}
+.info-detail h1 {
+    font-size: 45px;
+    text-align: center;
+    font-family: viga;
+}
+.info-detail a {
+    text-decoration: none;
+    color: white;
+}
+
+.info-detail h3 {
+    font-size: 30px;
+    margin-top: 5px;
+}
+.info-detail p {
+    font-size: 17px;
+    margin-top: -5px;
+}
+
+/* melayani mobil */
+.info-detail .melayani {
+    padding:23px;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+/* Footer */
+.footer {
+    background-color: rgba(33,33,33,1);
+    width: 100%;
+    box-sizing: border-box;
+    color: #ACACAC;
+    line-height: 50px;
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.footer .copi {
+    flex: 50%;
+    padding-left: 50px;
+}
+
+.footer .social {
+    flex: 50%;
+    padding-right: 50px;
+    text-align: right;
+}
+.footer .social a{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+@media (max-width: 576px) {
+    #masthead.site-header.navbar-fixed {
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        top: 0px;
+    }
+
+    section.gallery .thumbnail {
+        width: 99.4%;
+        height: 200px;
+    }
+
+    /* Navbar Logo */
+    .navbar .navbar-logo img {
+        margin-left: 20px;
+        width: 150px;
+        height: 100%;
+    }
+    .navbar {
+        position: sticky;
+    }
+    /* bengkel */
+    #bengkel {
+        margin: 20px auto;
+        width: 100%;
+        height: 240px;
+    }
+    .d-block {
+        background-size: cover;
+    }
+    .carousel-item{
+        height: 240px;
+        background-size: cover;
+    }
+    .carousel-item img{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+     section.gallery .thumbnail {
+        width: 99.4%;
+        height: 200px;
+    }
+    section.gallery .thumbnail .hover {
+        padding: 0px;
+    }
+    .thumbnail .hover h3{
+        margin-top: 10px;
+    }
+    .info-detail {
+        flex-direction: column;
+    }
+    .info-detail .melayani {
+
+    padding:0px;
+    }
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .cara-kerja .kerja {
+        flex-direction: column;
+    }
+    .cara-kerja .kerja .card-kerja {
+        flex: 33%;
+        padding: 0;
+    }
+}
+
+
+@media (min-width: 576px) {
+
+    section.gallery .thumbnail {
+        width: 49.4%;
+        height: 300px;
+    }
+    .cara-kerja .kerja {
+        flex-direction: column;
+    }
+    .cara-kerja .kerja .card-kerja {
+        flex: 33%;
+        padding: 0 110px;
+    }
+}
+
+@media (min-width: 768px) {
+    section.gallery .thumbnail {
+    width: 49.4%;
+    }
+
+}
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+    }
+    .footer .copi {
+        padding: 0;
+        text-align: center;
+    }
+
+    .footer .social {
+        padding: 0;
+        text-align: center;
+    }
+    .info-detail h1 {
+        font-size: 40px;
+    }
+    .info-detail h3 {
+        font-size: 25px;
+        margin-top: 5px;
+    }
+    .info-detail p {
+        font-size: 15px;
+        margin-top: -5px;
+    }
+}
+
+/* Dekstop 1200 */
+@media (min-width: 992px) {
+
+    /* Layanan */
+
+    section.gallery .thumbnail {
+    width: 33%;
+    height: 300px;
+    }
+    .thumbnail .hover h3{
+        margin-top: 80px;
+    }
+
+    /* Navbar */
+
+    .navbar-brand, .nav-link {
+        color: white !important;
+    }
+
+    .navbar .navbar-brand {
+        font-size: 38px;
+        margin-left: 100px;
+        width: 200px;
+    }
+    .nav-item {
+        font-size: 17px;
+        margin-left: 15px;
+    }
+    .navbar-collapse {
+        margin-right: 40px;
+    }
+    .navbar a .nav-item .btn {
+        width: 171px;
+        height: 49px;
+    }
+    .navbar-nav .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #007bff;
+        border-radius: 5px;
+        width: 50%;
+        margin:auto;
+        margin-bottom: -3px;
+
+    }
+
+    .jumbotron {
+        height: 620px;
+    }
+    .jumbotron .display-4 {
+        font-size: 38px;
+    }
+    .jumbotron p {
+        font-size: 20px;
+    }
+    .jumbotron a {
+        font-size: 20px;
+    }
+
+    .appears img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .info-panel {
+        padding: 30px 30px;
+    }
+    /* Bengkel */
+    #bengkel {
+        width: 800px;
+        height: 520px;
+        margin-bottom:40px;
+    }
+    .cara-kerja .kerja {
+        flex-direction: row;
+    }
+    .cara-kerja .kerja .card-kerja {
+        flex: 33%;
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        position: sticky;
+    }
+    .navbar .tombol {
+        margin-bottom: 5px;
+    }
+    /* Cara Kerja */
+
+    .cara-kerja {
+        background-color: rgba(0,166,211,1);
+        padding: 20px 40px;
+        margin: 10px auto;
+    }
+
+    .cara-kerja h1 {
+        font-size: 40px;
+    }
+    .cara-kerja img{
+        width: 60px;
+        height: 60px;
+        margin-top: 10px;
+    }
+    .cara-kerja .nt {
+        margin-top: 0;
+    }
+    .cara-kerja h3 {
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .cara-kerja p {
+        font-size: 15px;
+    }
+
+    /* Info-detail */
+
+    .info-detail {
+        background-color: rgba(0,166,211,1);
+        padding: 0 20px ;
+
+    }
+    .melayani{
+        padding:0 20px 20px 0px;
+        text-align: justify;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    /* Footer */
+    .footer {
+
+    }
+    /* bengkel */
+
+
+    .navbar-brand, .nav-link {
+        color: white !important;
+    }
+
+
+    .navbar {
+        margin: 0;
+        padding: 0 0 0px 0;
+        background-color: #373842;
+    }
+    .navbar-brand {
+        margin: 10px 0 10px 20px;
+    }
+    .navbar-toggler{
+        border: 0 solid;
+    }
+    .nav-item {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .navbar .collapse {
+        transition: 1s ease;
+    }
+    .info-panel .nth{
+    margin-top: 20px;
+    }
+
+    /* Bar Icon */
+    .bar-icon {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: .3s ease;
+        padding: 0;
+        margin-right: 20px;
+    }
+    .bar-icon span {
+        width: 25px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        transition: 1s;
+        transform: translateX(-50%);
+        border-radius: 2px;
+    }
+    .bar-icon span:nth-child(1){
+        top: 28%;
+        left: 50%;
+        background: #fff;
+    }
+    .bar-icon span:nth-child(2){
+        bottom: 30%;
+        left: 50%;
+        background: #fff;
+    }
+    .bar-icon span:nth-child(3){
+        bottom: 47%;
+        left: 50%;
+        background: #fff;
+        transition: 1s ease;
+    }
+    .bar-icon.active span:nth-child(1){
+        top: 50%;
+        left: 50%;
+        width: 60%;
+        transform: translate(-50%, -50%) rotate(135deg);
+        background: var(--color1);
+    }
+    .bar-icon.active span:nth-child(2){
+        top: 50%;
+        left: 50%;
+        width: 60%;
+        transform: translate(-50%, -50%) rotate(225deg);
+        background: var(--color1);
+    }
+    .bar-icon.active span:nth-child(3){
+        display: none;
+        background: rgba(0, 0, 0, 0);
+    }
+    .bar-icon:before{
+        counter-reset: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%, -50%);
+        width: 40px;
+        height: 40px;
+        background: #fff;
+        transition: .5s;
+    }
+    .bar-icon.active:before {
+        width: 0;
+        height: 0;
+    }
+
+}
+
+/* Gallery */
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer;}
+.w3-badge {height:13px;width:13px;padding:0;}
+
+Bar icon
+
